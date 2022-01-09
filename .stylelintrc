@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order",
+    "stylelint-config-standard-scss"
+  ],
+  "customSyntax": "postcss",
+  "rules": {
+    "number-leading-zero": null,
+    "string-quotes": "single",
+    "function-url-quotes": "never",
+    "font-family-name-quotes": "always-unless-keyword",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "include",
+          "mixin"
+        ]
+      }
+    ]
+  },
+  "declaration-no-important": true
+}

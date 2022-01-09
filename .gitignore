@@ -1,0 +1,13 @@
+# configuration folders 
+.idea
+.vscode
+
+# node packages
+node_modules/
+
+# production
+/build/
+
+
+# log files
+debug.log
