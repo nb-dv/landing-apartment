@@ -10,6 +10,8 @@
     "string-quotes": "single",
     "function-url-quotes": "never",
     "font-family-name-quotes": "always-unless-keyword",
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
     "at-rule-no-unknown": [
       true,
       {

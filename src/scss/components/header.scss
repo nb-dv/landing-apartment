@@ -1,0 +1,127 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:
+    linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, .38) 51.04%, #242b33 92.19%),
+    url(../../img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  &__nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__main {
+    height: 100%;
+  }
+
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 582px;
+    height: 70vh;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 30px;
+      font-family: 'PlayfairDisplay', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+  }
+
+  &__mouse {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__mouse-icon {
+    width: 40px;
+    height: 40px;
+    animation: down-up 1s cubic-bezier(.1, .25, .1, 1) 0s infinite alternate both;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    max-width: 70px;
+  }
+
+  &__name {
+    color: var(--color-accent);
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20%;
+
+  &__icon {
+    max-width: 21px;
+    max-height: 21px;
+    fill: var(--color-white);
+  }
+
+  &__link,
+  &__icon {
+    transition: all .5s ease-out;
+  }
+
+  &__link:hover {
+    color: var(--color-accent);
+
+    svg {
+      fill: var(--color-accent);
+    }
+  }
+}
+
+@keyframes down-up {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(3px);
+  }
+}
